@@ -220,3 +220,6 @@ __marimo__/
 # Environment variables / secrets
 .env
 .env.*
+
+#VSC environment
+.vscode/*
