@@ -3,7 +3,7 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import pandas as pd
 
-data = Path(__file__).parent / "binance historical"
+data = Path(__file__).parent/ "data" / "binance historical"
 
 class Backtester:
     def __init__(self, csv_path: Path = data, starting_cash: float = 100_000.0, maker_fee: float = 0.0005, taker_fee: float = 0.001, currencies: list[str] = ["BTCUSDT", "ETHUSDT", "SOLUSDT"]):
