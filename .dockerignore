@@ -1,0 +1,28 @@
+#Git repo
+.git/
+.gitignore
+README.md
+
+#python virtual environment / cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+
+#docker configs
+Dockerfile
+.dockerignore
+
+#API
+.env
+.env.*
+
+#local logs and IDE settings
+bot/logs/*.log
+.vscode/
+
+#historical data
+bot/data/*.zip
