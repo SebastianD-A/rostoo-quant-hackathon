@@ -2,3 +2,5 @@ numpy
 pandas
 requests
 matplotlib
+statsmodels
+scipy
