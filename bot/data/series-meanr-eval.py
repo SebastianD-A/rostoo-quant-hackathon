@@ -20,12 +20,18 @@ class Crypto:
         self.lt_mean = None
         self.meanr_speed = None
         self.volatility = None
+        self.adf_statistic = None
+        self.adf_p_val = None
+        self.z_score = None
+        self.half_life = None
 
-    def calc_ou_meanr(self):
+    def calc_ou_meanr(self, window=200):
 
-        val = self.val.dropna()
+        val = self.val.dropna().tail(window)
         val_change = val.diff().dropna()
         val_prev = val.shift(1).dropna()
+        
+        val_prev, val_change = val_prev.align(val_change,join="inner")
 
         slope, intercept = np.polyfit(val_prev, val_change, 1)
 
@@ -85,6 +91,9 @@ class DataEval:
 
         return results
 
+a = DataEval()
+
+print(a.evaluate_meanr())
 
 
 
