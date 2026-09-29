@@ -1,12 +1,11 @@
 """
-Moving-average crossover strategy (trend following).
+Moving-average crossover strategy 
 
 Rule, checked every hour for each coin:
-  - 50-hour average ABOVE 200-hour average -> trend is up   -> hold the coin
-  - 50-hour average BELOW 200-hour average -> trend is down -> sell, hold cash
+  - 50 hour average ABOVE 200-hour average -> trend is up   -> hold the coin
+  - 50 hour average BELOW 200-hour average -> trend is down -> sell, hold cash
 
 Each coin gets an equal share of the portfolio so one coin can't use up all the cash.
-Plugs into Seb's Backtester: calculate_indicators() + decide_actions().
 """
 
 
