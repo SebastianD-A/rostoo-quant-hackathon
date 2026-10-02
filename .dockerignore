@@ -1,0 +1,27 @@
+#Git repo
+.git/
+.gitignore
+README.md
+
+#python environment
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+
+#docker config
+Dockerfile
+.dockerignore
+
+#api keys
+.env
+.env.*
+
+#logs
+bot/logs/*
+!bot/logs/.gitkeep
+.vscode/
+bot/data/**/*.zip
