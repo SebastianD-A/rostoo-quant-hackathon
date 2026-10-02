@@ -36,7 +36,7 @@ def run_tests():
     shorts = client.get_short_positions(pair="BTC/USD")
     print("Short Positions:", shorts)
 
-    print("\n=== 7. Executing Live Test Order (Trade Logging Test) ===")
+    print("\n7. Executing Live Test Order (Trade Logging Test)")
     ticker_data = ticker.get("Data", {}).get("BTC/USD", {})
     last_price = ticker_data.get("LastPrice", 80000)
     target_price = round(last_price * 0.90, 2)
