@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Roostoo Quant Hackathon
 
 This repository contains two rule-based crypto strategies and a historical backtester for comparing their portfolio results. It currently focuses on research and backtesting; it is not yet a live Roostoo trading bot.
@@ -23,6 +24,15 @@ All indicators use the supplied 1-hour candles. The BTC filter is therefore a 20
 ## Setup
 
 Requires Python 3 and the packages listed in `requirements.txt`.
+=======
+# rostoo-quant-hackathon
+
+This repository contains two rule-based crypto strategies and a historical backtester for comparing their portfolio results. It currently focuses on research and backtesting.
+
+## Setup
+
+Requires Python 3 and the packages: numpy, pandas, requests, matplotlib
+>>>>>>> b0e2a663d1ef0672be279862c2080e86a5f510a6
 
 ```powershell
 python -m pip install -r requirements.txt
@@ -67,9 +77,12 @@ tests/                             Test directory
 ## Market data
 
 The downloader in `bot/data/market_data.py` fetches monthly Binance spot klines for BTCUSDT, ETHUSDT, and SOLUSDT at the 1-hour interval. The CSVs are already included, so downloading data is not required to run the backtest. The downloader's date range is set in its `__main__` block; review that range before running it, as it writes CSVs into the bundled data directory.
+<<<<<<< HEAD
 
 ## Hackathon context
 
 The competition asks teams to build autonomous strategies for Roostoo's mock exchange, deploy them on the provisioned AWS environment, and keep trade activity and strategy changes auditable. The supplied rules prohibit high-frequency trading, market making, and arbitrage; allow unleveraged spot long and short positions; and state taker and maker commissions of 0.1% and 0.05%, respectively. The evaluation includes portfolio return and risk-adjusted measures (Sortino, Sharpe, and Calmar), followed by review of rule compliance, repository quality, and strategy implementation.
 
 This repository does **not** currently include a completed Roostoo API client, live order execution, deployment automation, short-position simulation, or the full risk-adjusted scoring metrics. Those components are needed before treating it as a competition-ready autonomous bot. Live competition rules also prohibit manual intervention in trading.
+=======
+>>>>>>> b0e2a663d1ef0672be279862c2080e86a5f510a6
