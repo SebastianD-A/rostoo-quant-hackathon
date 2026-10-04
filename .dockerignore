@@ -12,17 +12,16 @@ venv/
 env/
 .pytest_cache/
 
-#docker configs
+#docker config
 Dockerfile
 .dockerignore
 
-#API
+#api keys
 .env
 .env.*
 
-#local logs and IDE settings
-bot/logs/*.log
+#logs
+bot/logs/*
+!bot/logs/.gitkeep
 .vscode/
-
-#historical data
-bot/data/*.zip
+bot/data/**/*.zip
