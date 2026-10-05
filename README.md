@@ -31,7 +31,6 @@ This repository contains two rule-based crypto strategies and a historical backt
 ## Setup
 
 Requires Python 3 and the packages: numpy, pandas, requests, matplotlib
->>>>>>> b0e2a663d1ef0672be279862c2080e86a5f510a6
 
 ```powershell
 python -m pip install -r requirements.txt
