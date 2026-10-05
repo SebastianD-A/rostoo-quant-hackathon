@@ -30,7 +30,7 @@ This repository contains two rule-based crypto strategies and a historical backt
 
 ## Setup
 
-Requires Python 3 and the packages: numpy, pandas, requests, matplotlib
+Requires Python 3 and the packages listed in `requirements.txt`.
 
 ```powershell
 python -m pip install -r requirements.txt
@@ -80,4 +80,3 @@ The downloader in `bot/data/market_data.py` fetches monthly Binance spot klines 
 
 The competition asks teams to build autonomous strategies for Roostoo's mock exchange, deploy them on the provisioned AWS environment, and keep trade activity and strategy changes auditable. The supplied rules prohibit high-frequency trading, market making, and arbitrage; allow unleveraged spot long and short positions; and state taker and maker commissions of 0.1% and 0.05%, respectively. The evaluation includes portfolio return and risk-adjusted measures (Sortino, Sharpe, and Calmar), followed by review of rule compliance, repository quality, and strategy implementation.
 
-=======
